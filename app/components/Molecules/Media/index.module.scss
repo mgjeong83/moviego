@@ -1,0 +1,35 @@
+.media {
+  &_item {
+    margin-bottom: 3.6rem;
+  
+    &:last-child {margin-bottom: 0;}
+    &.on {
+      margin-bottom: 3.6rem;
+      .media {
+        &_link {flex-direction: column;}
+        &_img {width: 100%;}
+        &_title {font-size: var(--text-size-xl); font-weight: 500;}
+      }
+    }
+  }
+  &_link {display: flex; align-items: start; justify-content: center; gap: 2.4rem;}
+  &_img {
+    width: 24rem; aspect-ratio: 3/4; flex-shrink: 0; overflow: hidden;
+    border-radius: 1rem; background-color: var(--color-gray-white);
+  }
+  &_textbox {
+    width: 100%; padding: 2rem 0;
+  }
+  &_type {
+    margin-bottom: .2rem;
+    font-size: var(--text-size-xs); font-weight: 600; letter-spacing: -.05rem;
+  }
+  &_title {
+    margin-bottom: 1.6rem;
+    font-size: var(--text-size-md);
+  }
+  &_desc {
+    margin-top: 4rem;
+    font-size: var(--text-size-xs);
+  }
+}

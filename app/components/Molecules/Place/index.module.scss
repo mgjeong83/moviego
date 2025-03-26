@@ -1,0 +1,17 @@
+.place {
+  &_item {
+    display: flex; align-items: center; justify-content: center; gap: 2.4rem;
+    margin-bottom: 2.4rem;
+
+    &:last-child {margin-bottom: 0;}
+  }
+  &_img {
+    width: 24rem; aspect-ratio: 1; flex-shrink: 0;
+    border-radius: 1rem; background-color: var(--color-gray-white);
+  }
+  &_textbox {width: 100%;}
+  &_title {
+    margin-bottom: 2.4rem;
+    font-size: var(--text-size-md); font-weight: 600;
+  }
+}

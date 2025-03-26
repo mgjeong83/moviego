@@ -1,0 +1,7 @@
+.place {
+  &_text {
+    display: flex; align-items: start; gap: 1.2rem;
+    font-size: var(--text-size-xs);
+  }
+  &_icon {width: 4rem;}
+}

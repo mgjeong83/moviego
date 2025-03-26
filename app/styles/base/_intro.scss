@@ -1,0 +1,71 @@
+@keyframes spin {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotateX(0deg) rotateY(0deg); 
+  }
+  40% {
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1) rotateX(0deg) rotateY(3630deg);  
+  }
+  81% {
+    transform: scale(1) rotateX(0deg) rotateY(3580deg);  
+  }
+  85% {
+    transform: scale(1) rotateX(0deg) rotateY(3615deg);  
+  }
+  88% {
+    transform: scale(1) rotateX(0deg) rotateY(3590deg);  
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg) rotateY(3600deg);  
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) rotateX(0deg) rotateY(3600deg); 
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.intro {
+  &.contents {
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    width: 100%; height: 100vh;
+  }
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 5s ease-out;  
+    transform-style: preserve-3d; /* 3D 회전 효과 적용 */
+    opacity: 0;
+    img {
+      width: 30rem;
+      height: 30rem;
+      object-fit: cover;
+    }
+  }
+
+  &_text {
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+    animation: spin1 5s ease-out;
+    opacity: 0;
+  }
+}
+

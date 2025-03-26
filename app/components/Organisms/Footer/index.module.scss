@@ -1,0 +1,31 @@
+.footer {
+  display: flex; flex-direction: column; 
+  width: 100%; padding: 5rem 3.2rem;
+  background-color: #f4f4f4;
+  color: #777;
+  &_logo {
+    font-size: 4rem; font-weight: 700;
+  }
+  &_map {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2.2rem; font-weight: 700;
+  }
+  &_sns {
+    margin-top: 2rem;
+    display: flex; gap: 1rem;
+    li {
+      font-size: 1.8rem; font-weight: 700;
+    }
+  }
+  &_copy {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.8rem; font-weight: 400;
+  }
+  &_producer {
+    margin-top: 0;
+    width: 100%;
+    font-size: 1.8rem; font-weight: 400;
+  }
+}

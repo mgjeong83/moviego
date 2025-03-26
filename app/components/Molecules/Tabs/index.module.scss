@@ -1,0 +1,76 @@
+.tabs {
+  width: 100%;
+  display: flex; justify-content: center;
+  :global {
+    .swiper {
+      padding: 0 4rem; overflow: visible;
+    }
+    .swiper-slide {
+      width: 18rem;
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      .btn-text{
+        font-weight: 700;
+      }
+    }
+  }
+  
+  &_swiper {
+    width: 100%;
+    max-width: 72rem;
+  }
+
+  // 이미지 탭
+  &.img {
+    margin-top: 8rem;
+    .tabs_item{
+      display: flex; flex-direction: column;
+    }
+    :global {
+      .btn-box {
+        display: flex; flex-direction: column;
+        padding: 0;
+  
+        .btn-img{
+          width: 100%;
+          border-radius: 50%; 
+          overflow: hidden;
+  
+        }
+      }
+    }
+  
+  }
+
+  // 텍스트 탭
+  &.text {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    :global {
+      .swiper-slide {
+        width: auto;
+        margin-right: 6rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        .btn-box{
+          height: 8rem;
+        }
+      }
+    }
+  
+    .tabs_swiper {
+      display: flex;
+      align-items: center;
+      height: 8rem;
+      .tabs_item {
+        opacity: .5;
+        &-on {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

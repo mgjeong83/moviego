@@ -1,0 +1,37 @@
+{
+  "name": "studyproject-moviego",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "framer-motion": "^12.5.0",
+    "next": "15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "svgr": "^1.10.0",
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.6",
+    "@storybook/blocks": "^8.6.6",
+    "@storybook/nextjs": "^8.6.6",
+    "@storybook/react": "^8.6.6",
+    "@storybook/react-webpack5": "^8.6.6",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "clsx": "^2.1.1",
+    "sass": "^1.85.1",
+    "storybook": "^8.6.6",
+    "typescript": "^5"
+  }
+}

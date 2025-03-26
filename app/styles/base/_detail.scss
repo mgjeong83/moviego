@@ -1,0 +1,12 @@
+.detail {
+  margin-top: 9.9rem; padding: 2rem 0 20rem;
+
+  &_btn-wrap {
+    z-index: 999; position: fixed; bottom: 0; width: 72rem;
+    padding: 1.6rem; background: #fff; 
+  }
+  &_btn {
+    width: 100%; padding: 2.4rem; border-radius: 1rem; background: #000; 
+    font-size: var(--text-size-md); color: #fff;
+  }
+}

@@ -1,0 +1,16 @@
+.sortbtn {
+  position: relative;
+  padding: 2rem 3rem;
+  font-size: var(--text-size-xs);
+  
+  &:before {
+    content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); transition: ba .5s ;
+    width: 1.6rem; height: 1.6rem; background: url('/images/icon/toggle.svg') no-repeat center/cover;
+  }
+  
+  &_on {
+    &::before {
+      background: url('/images/icon/toggle_on.svg') no-repeat center/cover;
+    }
+  }
+}

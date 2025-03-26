@@ -1,0 +1,27 @@
+.navigator {
+  position: fixed; z-index: 100; left: 50%; bottom: 0;
+  display: flex; justify-content: center;
+  width: 100%; max-width: 72rem; transform: translateX(-50%);
+  background-color: #fff;
+  border: none;
+  transition: bottom .3s ease;
+  &:global {
+    &.down {
+      bottom: -9rem;
+    }
+  }
+
+  &_list{
+    display: flex; justify-content: center;
+    width: 100%; max-width: 72rem;
+  }
+  &_item{
+    width: 21.8rem; height: 9rem;
+    display: flex; justify-content: center; align-items: center;
+  }
+  :global {
+    .btn-box {
+      width: 100%; padding: 2rem;
+    }
+  }
+}

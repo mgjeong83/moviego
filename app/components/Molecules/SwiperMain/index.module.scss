@@ -1,0 +1,51 @@
+@use '@/app/styles/utils/mixins.scss' as *;
+
+
+.mainslide {
+  width: 100%;
+
+  :global {
+    .swiper-slide {
+      position: relative;
+      color: #fff;
+      background-color: #000;
+      opacity: 0.5;
+      width: 46rem;
+      height: 65rem;
+      overflow: hidden;
+      transition: all .05s ease;
+    }
+    .swiper-slide-active {
+      opacity: 1;
+    }
+    .swiper {
+      width: 100%; max-width: 120rem; padding:6rem 0 4rem; 
+    }
+    .swiper-pagination {
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: auto;
+      width: auto;
+      .swiper-pagination-bullet {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        &-active {
+          background-color: #000;
+        }
+      }
+    }
+  }
+  .navigation{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    .btn_play{
+      width: 1.8rem;
+      height: 1.8rem;
+      svg{ fill: #fff;}
+    }
+  }
+}

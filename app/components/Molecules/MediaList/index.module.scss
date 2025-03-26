@@ -1,0 +1,21 @@
+.media_list {
+  &_place {font-size: 3rem; color: var(--color-gray);}
+  
+  &:global {
+    &.twoline {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 4rem 2rem;
+      li {
+        margin-bottom: 0;
+        
+        a {
+          display: flex; flex-direction: column;
+          img {width: 100%;}
+          > div {
+            padding: 0;
+            p {&:nth-child(2) {margin-bottom: 2rem;}}
+          }
+        }
+      }
+    }
+  }
+}

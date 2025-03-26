@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex; justify-content: center; align-items: center;
+  padding: 1rem 2rem;
+  border: none;
+  &_icon {
+    width: 5rem;
+  }
+  &_img {
+    width: 10rem;
+  }
+  &_text {
+    font-size: 3rem;
+  }
+  &.basic {
+
+  }
+  &.box {
+    border: .2rem solid #000;
+  }
+  &.line {
+    width: auto;
+    border-bottom: .2rem solid #000;
+    padding: 1rem 0;
+  }
+  &.icon {
+
+  }
+  &.img {
+    img{display: block;}
+    :global {
+      .btn-text{
+        margin-top: 1rem;
+      }
+    }
+  }
+  &.text {
+
+  }
+}

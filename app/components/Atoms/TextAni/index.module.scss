@@ -1,0 +1,37 @@
+/* 애니메이션 정의 */
+@keyframes moveText {
+  0% {
+    transform: translateX(40rem);
+    opacity: 0;
+  }
+  85% {
+    transform: translateX(-.6rem);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(.2rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.text {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  &_moving {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    font-size: 10rem; letter-spacing: 0.5rem; font-weight: 700; color: #333;
+    animation: moveText 0.6s ease-out 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: calc(1s + 0.1s * var(--i)); /* 각 글자에 애니메이션 지연을 추가 */
+  }
+}
+
+
